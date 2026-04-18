@@ -101,21 +101,22 @@
   }
 
   .btn-primary {
-    display: inline-flex; align-items: center; gap: 10px;
+    display: inline-flex; align-items: center; gap: 12px;
     background: var(--blue); color: #fff;
-    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 15px; font-weight: 600;
-    padding: 18px 40px; border-radius: 6px; text-decoration: none;
-    transition: all 0.2s ease; border: 1px solid rgba(255,255,255,0.1);
+    font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 700;
+    padding: 22px 52px; border-radius: 8px; text-decoration: none;
+    transition: all 0.3s ease; border: 1px solid rgba(100,160,255,0.4);
     position: relative; overflow: hidden;
+    box-shadow: 0 0 20px rgba(27,79,216,0.35), 0 0 60px rgba(27,79,216,0.15);
   }
   .btn-primary::before {
     content: ''; position: absolute; inset: 0;
     background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, transparent 60%);
     opacity: 0; transition: opacity 0.2s;
   }
-  .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 20px 40px rgba(27,79,216,0.4); }
+  .btn-primary:hover { background: var(--blue-light); transform: translateY(-2px); box-shadow: 0 0 30px rgba(27,79,216,0.5), 0 0 80px rgba(27,79,216,0.25), 0 20px 40px rgba(27,79,216,0.4); }
   .btn-primary:hover::before { opacity: 1; }
-  .btn-arrow { font-size: 18px; transition: transform 0.2s; }
+  .btn-arrow { font-size: 20px; transition: transform 0.2s; }
   .btn-primary:hover .btn-arrow { transform: translateX(4px); }
 
   .hero-guarantee { font-size: 13px; color: var(--gray); display: flex; align-items: center; gap: 6px; }
